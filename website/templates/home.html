@@ -1,0 +1,317 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Pigga landing page.">
+    <meta name="author" content="Devcrud">
+    <title>BLACK POT </title>
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'website/assets/imgs/favicon.jpg' %}">
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'website/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + Pigga main styles -->
+	<link rel="stylesheet" href="{% static 'website/css/pigga.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- First Navigation -->
+    <nav class="navbar nav-first navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'website/assets/imgs/favicon.jpg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#home">CALL US : <span class="pl-2 text-muted">6307243819</span></a>
+                </li>                   
+            </ul>
+        </div>
+    </nav>
+    <!-- End of First Navigation --> 
+    <!-- Second Navigation -->
+    <nav class="nav-second navbar custom-navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testmonial">Testmonials</a>
+                    </li>
+                </ul> 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/components.html" class="btn btn-primary btn-sm">Components</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation --> 
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <img src="{% static 'website/assets/imgs/favicon.jpg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page" class="logo">
+            <h1 class="subtitle">Welcome To Our Restaurant</h1>
+            <h1 class="title">Really Fresh &amp; Tasty</h1> 
+            <a class="btn btn-primary mt-3" href="#book-table">Book A Table</a> 
+        </div>      
+    </header>
+    <!-- End Of Page Header --> 
+    <!-- About Section -->
+    <section id="WorkingTime">
+        <div class="container">
+            <div class="row align-items-center">                
+                <div class="col-md-6">
+                    <h6 class="section-subtitle">Opening Times</h6>
+                    <h3 class="section-title">Working Time</h3>
+                    {% for i in WorkingTime %}
+                    <p class="mb-1 font-weight-bold">{{i.DaysWT}} <span class="font-weight-normal pl-2 text-muted">{{i.TimeWT}}</span></p>
+                    {% endfor %}
+                    <a href="#book-table" class="btn btn-primary btn-sm w-md mt-4">Book a table</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col">
+                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page" src="{% static 'website/imgs/about-1.jpg' %}" class="w-100 rounded shadow">
+                        </div>
+                        <div class="col">
+                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free  bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page" src="{% static 'website/imgs/about-2.jpg' %}" class="w-100 rounded shadow">
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+            <div class="section-devider my-6 transparent"></div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h6 class="section-subtitle">The Great Story</h6>
+                    <h3 class="section-title">Our Culinary Journey</h3>
+                    <p>The union of the first two drivers leads us to identify the first trend: Accessible cool. This is a type of format that is accessible to the majority of people but is seen by users as a fairly luxurious experience, thanks to significant attention to image and perceived quality. Accessible cool is the link between a classic restaurant and fast food, characterised by informal service and quick delivery.</p>
+                </div>
+                <div class="col-md-6 order-1 order-sm-first">
+                    <div class="row">
+                        <div class="col">
+                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page" src="{% static 'website/imgs/about-3.jpg' %}" class="w-100 rounded shadow">
+                        </div>
+                        <div class="col">
+                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page" src="{% static 'website/imgs/about-4.jpg' %}" class="w-100 rounded shadow">
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    <!-- Service Section -->
+    <section id="service" class="pattern-style-4 has-overlay">
+        <div class="container raise-2">
+            <h6 class="section-subtitle text-center">Featured Food</h6>
+            <h3 class="section-title mb-6 pb-3 text-center">Special Dishes</h3>
+            <div class="row">
+                {% for i in service %}
+                <div class="col-md-6 mb-4">
+                    <a href="javascrip:void(0)" class="custom-list">
+                        <div class="img-holder">
+                            <img src="media/{{i.image}}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
+                        </div>
+                        <div class="info">
+                            <div class="head clearfix"> 
+                                <h5 class="title float-left">{{i.dishname}}</h5>
+                                <p class="float-right text-primary">{{i.service}}</p>
+                            </div>
+
+                            <div class="body">
+                                <p>{{i.desc}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+                {% endfor %}
+            </div>                  
+        </div>
+    </section>
+    <!-- End of Featured Food Section -->
+
+    <!-- Menu Section -->
+    <section class="has-img-bg">
+        <div class="container">
+            <h6 class="section-subtitle text-center">Great Food</h6>
+            <h3 class="section-title mb-6 text-center">Main Menu</h3>
+            <div class="card bg-light">
+                <div class="card-body px-4 pb-4 text-center">                   
+                    <div class="row text-left">
+                        {% for i in Menu %}
+                        <div class="col-md-6 my-4">
+                            <a href="#" class="pb-3 mx-3 d-block text-dark text-decoration-none border border-left-0 border-top-0 border-right-0">
+                                <div class="d-flex">
+                                    <div class="flex-grow-1">
+                                        {{ i.menudishname }}
+                                        <p class="mt-1 mb-0">{{i.menudesc}}</p>
+                                    </div>
+                                    <h6 class="float-right text-primary">{{i.price}}</h6>
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <a href="#book-table" class="btn btn-primary mt-4">Book A Table</a>
+                </div>
+            </div>                  
+        </div>
+    </section>
+    <!-- End of Menu Section -->
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h6 class="section-subtitle text-center">Great Team</h6>
+            <h3 class="section-title mb-5 text-center">Talented Chefs</h3>
+            <div class="row">
+                {% for i in Chefs%}
+                <div class="col-md-4 my-3">
+                    <div class="team-wrapper text-center">
+                        <img src="media/{{i.Chefimage}}" class="circle-120 rounded-circle mb-3 shadow" alt=""> 
+                        <h5 class="my-3">{{i.Chefname}}</h5>
+                        <p>{{i.Chefdesc}}</p>
+                        <h6 class="socials mt-3">
+                            <a href="https://www.facebook.com/" class="px-2"><i class="ti-facebook"></i></a>
+                            <a href="javascript:void(0)" class="px-2"><i class="ti-twitter"></i></a>
+                            <a href="javascript:void(0)" class="px-2"><i class="ti-instagram"></i></a>
+                            <a href="javascript:void(0)" class="px-2"><i class="ti-google"></i></a>
+                        </h6>
+                    </div>
+                </div>
+                {% endfor %} 
+            </div>
+        </div>
+    </section>
+    <!-- End of Team Section -->
+
+    <!-- Testmonial Section -->
+    <section id="testmonial" class="pattern-style-3">
+        <div class="container">
+            <h6 class="section-subtitle text-center">Best Clients</h6>
+            <h3 class="section-title mb-5 text-center">Testmonials</h3>
+
+            <div class="row">
+                {% for i in Testmonials%}
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="media/{{i.Testmonialsimage}}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">{{i.Testmonialsname}}</h6>
+                                    <small class="text-muted mb-0">{{i.Testmonialstitle}}</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">{{i.Testmonialsdesc}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End of Testmonial Section -->
+
+
+    <!-- Book Table Section -->
+    <section id="book-table" class="bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="{% static 'website/imgs/contact.jpg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page" class="w-100 rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <form action="table" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name= "name" aria-describedby="emailHelp" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id='phone' name="phone" pattern="^[6789]\d{9,9}$"  placeholder="Mobile Number" maxlength="10" minlength="10" title="Please enter valid phone number " required>
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" class="form-control" id="date" name="date" placeholder="Date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id ="seats" name="seats" placeholder="Seats"required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Book A Table</button>
+                        <small class="form-text text-muted mt-3">We don't span customers. Check our <a href="#">Privacy Policy</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF Book Table Section -->
+
+    <!-- Prefooter Section  -->
+    <div class="py-4 border border-lighter border-bottom-0 border-left-0 border-right-0 bg-dark">
+        <div class="container">
+            <div class="row justify-content-between align-items-center text-center">
+                
+                    <a href="#" class="px-3"><small class="font-weight-bold">Our Company</small></a>
+                    <a href="location.html" class="px-3"><small class="font-weight-bold">Our Location</small></a>
+                    <a href="#" class="px-3"><small class="font-weight-bold">Help Center</small></a>
+                    <a href="components.html" class="pl-3"><small class="font-weight-bold">Components</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of PreFooter Section -->
+
+    <!-- Page Footer -->
+    <footer class="border border-dark border-left-0 border-right-0 border-bottom-0 p-4 bg-dark">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-left">
+                <div class="col">
+                    <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, <a href="https://www.devcrud.com" target="_blank">IMRD</a>  All rights reserved </p> 
+                </div>
+                <div class="d-none d-md-block">
+                    <h6 class="small mb-0">
+                        <a href="https://www.facebook.com/" class="px-2"><i class="ti-facebook"></i></a>
+                        <a href="javascript:void(0)" class="px-2"><i class="ti-twitter"></i></a>
+                        <a href="javascript:void(0)" class="px-2"><i class="ti-instagram"></i></a>
+                        <a href="javascript:void(0)" class="px-2"><i class="ti-google"></i></a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        {% for i in messages  %}
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            {% endfor %}
+          </div>
+
+    </footer>
+    <!-- End of Page Footer -->
+
+    <!-- core  -->
+    <script src="{% static 'website/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'website/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap affix -->
+    <script src="{% static 'website/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Pigga js -->
+    <script src="{% static 'website/js/pigga.js'%}"></script>
+
+</body>
+</html>
